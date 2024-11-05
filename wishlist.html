@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Finder - Wishlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 id="greetingMessage"></h2>
+    <header>
+        <div class="header-left">
+            <!-- Add your app name -->
+            <h1 class="app-name">Beauty Finder</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <button onclick="goBack()">Back to Home</button>
+                <button onclick="goToSearch()" class="nav-button">Search Products</button>
+                <button onclick="openCart()" class="nav-button">View Cart</button>
+            </nav>
+        </div>
+    </header>
+    <h1>Your Wishlist</h1>
+    <div id="wishlist"></div><!-- Confirmation Modal -->
+    <div id="confirmationModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:1000; justify-content:center; align-items:center;">
+        <div style="background:#fff; padding:20px; border-radius:5px; text-align:center;">
+            <p id="confirmationMessage"></p>
+            <button id="confirmYes">Yes</button>
+            <button id="confirmNo">No</button>
+        </div>
+    </div>    
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+</body>  
+</html>

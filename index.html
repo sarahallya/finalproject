@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 id="greetingMessage"></h2> 
+    <header>
+        <div class="header-left">
+            <!-- Add your app name -->
+            <h1 class="app-name">Beauty Finder</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <button onclick="openWishlist()" class="nav-button">Go to Wishlist</button>
+                <button onclick="goToSearch()" class="nav-button">Search Products</button>
+                <button onclick="openCart()" class="nav-button">View Cart</button>
+            </nav>
+        </div>
+    </header>
+    <section class="welcome-section">
+        <h2>Welcome to Beauty Finder!</h2>
+        <p>Your ultimate destination to find and explore your favorite beauty products.</p>
+    </section>
+    <img src=" d4347102b317f0483f929d9fbdd60591.jpg" alt="Beauty Finder" class="image" />      
+    <main>
+        <section class="popular-section">
+            <h2>Popular Products</h2>
+            <p>This is only suggestions on popular purchases. You can explore more based on product brand and price range on the search page.</p>
+            <div id="popular-products"></div>
+        </section>
+      <div id="recommendationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Trending Deals</h2>
+            <p>Don’t miss our latest offers on top brands!</p>
+        </div>
+    </div>    
+    </main>
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

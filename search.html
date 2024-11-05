@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Finder - Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 id="greetingMessage"></h2> 
+  <header>
+    <div class="header-left">
+        <!-- Add your app name -->
+        <h1 class="app-name">Beauty Finder</h1>
+    </div>
+    <div class="header-right">
+        <nav>
+          <button onclick="goBack()">Back to Home</button>
+          <button onclick="openWishlist()" class="nav-button">Go to Wishlist</button>
+          <button onclick="openCart()" class="nav-button">View Cart</button>
+        </nav>
+    </div>
+  </header> 
+    <h1>Search for Products</h1>
+    <input type="text" id="brand_input" placeholder="Enter brand (e.g., maybelline)">
+    <input type="text" id="min_price" placeholder="Min Price" step="1.00">
+    <input type="text" id="max_price" placeholder="Max Price" step="1.00">
+    <button onclick="searchProducts()">Search</button>
+    <h2>Results</h2>
+    <div id="results"></div>
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
